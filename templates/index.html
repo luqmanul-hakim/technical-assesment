@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map Data Retrieval</title>
+</head>
+<body>
+    <h1>Welcome to the Map Data Retrieval</h1>
+    <div id="mapContainer">
+        <!-- Map content will be dynamically added here -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.get("/map_data", function(data) {
+                // Log the data to the console
+                console.log(data);
+            });
+        });
+    </script>
+</body>
+</html>
